@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+test_solch = "6L5dTUpZE8ZSjm8S8h65xtsHJBeJ96LmUwh7QCWV2qX2"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/panda/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
